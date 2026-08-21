@@ -6,9 +6,9 @@ import profile_img from '../../assets/anuragpp.png'
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-        <img src={profile_img} alt="" />
-        <h1>👋 Hello! <span>I'm Anurag Kumar</span></h1>
-        <p>I am a passionate Web developer eager to create engaging and functional web applications.</p>
+        {/* <img src={profile_img} alt="" /> */}
+       <h1>Hello! <span>I'm Anurag Kumar</span></h1>
+<p>Software Developer with experience in React.js, Flutter, and Firebase, focused on building scalable and user-friendly applications.</p>
       
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact' >Conect With Me</AnchorLink></div>

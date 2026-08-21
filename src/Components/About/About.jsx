@@ -16,8 +16,8 @@ const About = () => {
             </div> */}
             <div className="about-right">
                 <div className="about-para">
-                    <p>🙋I recently completed my 🧑‍🎓B.Tech in 🧑‍💻Computer Science and am dedicated to learning and growing in the field of 🌐Web development.</p>
-                    <p>I have a strong foundation in 🖥️front-end and 🛠️back-end technologies, and I am enthusiastic about building interactive🌟 and user-friendly websites📱.</p>
+                    <p>I completed my B.Tech in Computer Science in 2024 and have professional experience in Frontend Development using React.js.</p>
+                    <p>Currently, I work as a Software Developer, building interactive and user-focused applications using Flutter and Firebase while continuously expanding my skills in modern software development.</p>
                 </div>
                 <div className="about-skills">
                     <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}} /></div>
