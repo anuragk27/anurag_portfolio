@@ -8,7 +8,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          Made with ❤️ by Anurag</p>
+          © 2026 Anurag Kumar. All rights reserved.</p>
       </div>
     </div>
   

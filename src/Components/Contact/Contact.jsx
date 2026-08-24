@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
-        <h1>🤝 Get in touch</h1>
+        <h1>Get in touch</h1>
         {/* <img src={} alt="" /> */}
       </div>
       <div className="contact-section">
@@ -57,7 +57,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  linkedin.com/anurag-kumar
+                  LinkedIn
                 </a>
               </p>
             </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  github.com/anuragk27
+                  GitHub
                 </a>
               </p>
             </div>

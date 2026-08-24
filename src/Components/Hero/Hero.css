@@ -34,19 +34,19 @@ a{
 .hero-action{
     display: flex;
     align-items: center;
-    font-size: 24px;
-    gap: 25px;
+    font-size: 16px;
+    gap: 20px;
     font-weight: 500;
     margin-bottom: 50px;
 }
 .hero-connect{
-    padding: 25px 45px;
+    padding: 14px 30px;
     border-radius: 50px;
     background: linear-gradient(264deg,#DA7C25 -5.09%, #B923E1 106.28%);
     cursor: pointer;
 }
 .hero-resume{
-    padding: 25px 75px;
+    padding: 14px 40px;
     border-radius: 50px;
     border:2px solid white;
     cursor: pointer;
