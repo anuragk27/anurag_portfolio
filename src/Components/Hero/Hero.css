@@ -34,6 +34,26 @@ a{
     font-size: 24px;
     line-height: 40px;
 }
+.typewriter{
+    min-height: 80px;
+    background: linear-gradient(270deg, #DA7C25 10%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.typewriter .cursor{
+    -webkit-text-fill-color: white;
+}
+.cursor{
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: 300;
+    animation: blink 0.7s step-end infinite;
+}
+@keyframes blink{
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 .hero-action{
     display: flex;
     align-items: center;
