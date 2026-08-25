@@ -1,12 +1,12 @@
 import React from 'react'
 import './Hero.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import profile_img from '../../assets/anuragpp.png' 
+import profile_img from '../../../dist/assets/img.jpg'
 
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-        {/* <img src={profile_img} alt="" /> */}
+        <img src={profile_img} alt="" />
        <h1>Hello! <span>I'm Anurag Kumar</span></h1>
 <p>Software Developer with experience in React.js, Flutter, and Firebase, focused on building scalable and user-friendly applications.</p>
       
