@@ -1,7 +1,14 @@
 import React from 'react'
 import './About.css'
-// import img from '../../../dist/assets/img.jpg'
-// import img2 from '../../assets/Anurag.jpeg'
+import reactIcon from '../../assets/react.png'
+import flutterIcon from '../../assets/flutter.png'
+import firebaseIcon from '../../assets/firebase.png'
+import jsIcon from '../../assets/js.png'
+import htmlIcon from '../../assets/html.png'
+import cssIcon from '../../assets/css.png'
+import djangoIcon from '../../assets/django.png'
+import bootstrapIcon from '../../assets/bootstrap.png'
+import pythonIcon from '../../assets/pythom.png'
 
 const About = () => {
   return (
@@ -20,11 +27,15 @@ const About = () => {
                     <p>Currently, I work as a Software Developer, building interactive and user-focused applications using Flutter and Firebase while continuously expanding my skills in modern software development.</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}} /></div>
-                    <div className="about-skill"><p>JAVASCRIPT</p><hr style={{width:"55%"}} /></div>
-                    <div className="about-skill"><p>REACT JS</p><hr style={{width:"60%"}} /></div>
-                    <div className="about-skill"><p>FLASK</p><hr style={{width:"50%"}} /></div>
-                    <div className="about-skill"><p>DJANGO</p><hr style={{width:"60%"}} /></div>
+                    <div className="about-skill-icon"><img src={reactIcon} alt="React" /><p>React</p></div>
+                    <div className="about-skill-icon"><img src={flutterIcon} alt="Flutter" /><p>Flutter</p></div>
+                    <div className="about-skill-icon"><img src={firebaseIcon} alt="Firebase" /><p>Firebase</p></div>
+                    <div className="about-skill-icon"><img src={jsIcon} alt="JavaScript" /><p>JavaScript</p></div>
+                    <div className="about-skill-icon"><img src={htmlIcon} alt="HTML" /><p>HTML</p></div>
+                    <div className="about-skill-icon"><img src={cssIcon} alt="CSS" /><p>CSS</p></div>
+                    <div className="about-skill-icon"><img src={djangoIcon} alt="Django" /><p>Django</p></div>
+                    <div className="about-skill-icon"><img src={bootstrapIcon} alt="Bootstrap" /><p>Bootstrap</p></div>
+                    <div className="about-skill-icon"><img src={pythonIcon} alt="Python" /><p>Python</p></div>
                 </div>
             </div>
         </div>

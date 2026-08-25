@@ -31,32 +31,40 @@
     font-weight: 500;
 }
 .about-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+.about-skill-icon{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-.about-skill{
-    display: flex;
-    gap: 50px;
     align-items: center;
-    transition: 0.3s;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: default;
 }
-.about-skill p{
-     min-width: 150px;
-     font-size: 24px;
-     font-weight: 500;
+.about-skill-icon:hover{
+    transform: translateY(-6px);
+    border-color: #B415FF;
+    background: rgba(180, 21, 255, 0.08);
 }
-.about-skill hr{
-    outline: none;
-    border: none;
-    width: 50%;
-    height: 8px;
-    border-radius: 50px;
-    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28% );
+.about-skill-icon img{
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
 }
-.about-skill:hover{
-    transform: scale(1.05);
-    transform: 0.3s;
+.about-skill-icon p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #DBDBDB;
+    text-align: center;
+    margin: 0;
 }
 .about-left img{
     width: 400px;
@@ -64,13 +72,14 @@
 }
 @media(max-width:768px){
     .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
+        gap: 40px;
+        margin: 50px 24px;
+        align-items: center;
     }
     .about-title h1{
-        font-size: 50px;
+        font-size: 44px;
         padding: 0;
+        text-align: center;
     }
     .about-title img{
         width: 130px;
@@ -83,20 +92,23 @@
         display: none;
     }
     .about-para{
-        font: 18px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 28px;
+        gap: 16px;
     }
-    .about-skill{
-        gap: 20px;
-        align-items: center;
+    .about-skills{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
-    .about-skill p{
-        font-size: 20px;
+    .about-skill-icon{
+        padding: 14px 10px;
     }
-    .about-skill hr{
-        height: 6px;
+    .about-skill-icon img{
+        width: 40px;
+        height: 40px;
     }
-    
-
+    .about-skill-icon p{
+        font-size: 11px;
+    }
     
 }
