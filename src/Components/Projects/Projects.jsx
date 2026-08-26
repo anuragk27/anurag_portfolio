@@ -21,6 +21,8 @@ const Projects = () => {
         {projects_data.map((project, index) => (
           <Card key={index} className="project-card" sx={{
             maxWidth: 345,
+            display: 'flex',
+            flexDirection: 'column',
             background: 'rgba(255,255,255,0.05)',
             backdropFilter: 'blur(10px)',
             border: '1px solid rgba(255,255,255,0.1)',
@@ -38,7 +40,7 @@ const Projects = () => {
               alt={project.w_name}
               sx={{ objectFit: 'cover' }}
             />
-            <CardContent>
+            <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h6" component="div" sx={{ color: '#fff', fontWeight: 600 }}>
                 {project.w_name}
               </Typography>
@@ -46,9 +48,8 @@ const Projects = () => {
                 {project.w_desc}
               </Typography>
             </CardContent>
-            <CardActions sx={{ padding: '8px 16px 16px', gap: '8px' }}>
+            <CardActions sx={{ padding: '12px 16px 20px', justifyContent: 'space-between' }}>
               <Button
-                size="small"
                 variant="contained"
                 href={project.w_link}
                 target="_blank"
@@ -59,13 +60,14 @@ const Projects = () => {
                   borderRadius: '20px',
                   textTransform: 'none',
                   fontWeight: 600,
+                  padding: '8px 20px',
+                  fontSize: '0.85rem',
                   '&:hover': { background: 'linear-gradient(135deg, #7b2ff7, #c108ff)' }
                 }}
               >
                 Live Link
               </Button>
               <Button
-                size="small"
                 variant="outlined"
                 href={project.w_code}
                 target="_blank"
@@ -77,6 +79,8 @@ const Projects = () => {
                   borderRadius: '20px',
                   textTransform: 'none',
                   fontWeight: 600,
+                  padding: '8px 20px',
+                  fontSize: '0.85rem',
                   '&:hover': {
                     borderColor: '#c108ff',
                     color: '#c108ff',
